@@ -35,8 +35,9 @@ a {
 #hero {
     width: 400px;
     height: 50%;
-    margin-left: 35%;
+    margin-left: 33%;
     padding-top: 1%;
+    border-radius: 50px;
 }
 
 h2 {
@@ -62,19 +63,19 @@ button {
 button:hover {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
-#buttonf {
+.SendEmail {
     display: flex;
     position: relative;
     margin-top: 1%;
-    left: 45%;
+    left: 42%;
 }
 .birdie1 {
     position: relative;
     bottom: 45px;
-    left: 730px;
+    left: 725px;
 }
 #birdieBounce {
-    animation: birdieBounce .5s infinite;
+    animation: birdieBounce .7s infinite;
 }
 @keyframes birdieBounce {
     from {
@@ -87,6 +88,7 @@ button:hover {
       margin-top: 0px;
     }
 }
+
 #texas {
     position: relative;
     padding-bottom: 10%;
@@ -95,12 +97,12 @@ button:hover {
 }
 .heart {
     position: relative;
-    bottom: 230px;
-    left: 210px;
+    bottom: 140px;
+    left: 170px;
     z-index: 2;
 }
 #heartBounce {
-    animation: heartBounce .9s infinite;
+    animation: heartBounce 2s infinite;
 }
 @keyframes heartBounce {
     from {
@@ -116,9 +118,19 @@ button:hover {
 
 .aboutBox {
     background-color: #F9F8F7;
-    height: 400px;
+    height: 520px; 
 }
-
+.aboutContainer {
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 2fr;
+}
+.aboutText {
+    text-align: left;
+    margin-top: -3%;
+}
 /*<!-My UX Skills section coded using css flex->*/
 .skillsBox {
     background-color: #F9F8F7;
@@ -140,6 +152,7 @@ button:hover {
   }
   .container {
     padding: 2px 16px;
+    overflow-wrap: break-word;
   }
 
 h8 {
@@ -274,40 +287,26 @@ p1 {
 h3 {
     font-family: lato;
     text-align: left; 
-    font-size: large; 
+    font-size: x-large; 
     color: #9D364F;
-    margin-left: 5%;
+    margin-left: 20%;
     padding-top: 2%;
 }
-@media screen and (max-width: 600px) {
-    .cards {
-        display: columns;
-    };
-    .card {
-        width: 100%;
-    }
-    .image-grid {
-        grid-template-rows: 1fr;
-        grid-template-columns: 1fr;
-    }
 
-}
 .footerBox {
     background-color: #F9BEB8;
-    height: 300px;
+    height: 145px;
 }
 .footerNav {
     background-color: #F9BEB8;
+    position: relative;
+    margin-bottom: 2%;
 }
-#footerButton {
-    float: right;
-    margin-right: 9%;
-    margin-top: -5%;
-}
+
 .birdie2 {
     position: relative;
-    bottom: 52px;
-    left: 1125px;
+    bottom: 46px;
+    left: 713px;
 }
 #birdieBounce2 {
     animation: birdieBounce .5s infinite;
@@ -322,4 +321,17 @@ h3 {
     to {
       margin-top: 0px;
     }
+}
+@media screen and (max-width: 600px) {
+    .cards {
+        display: columns;
+    };
+    .card {
+        width: 100%;
+    }
+    .image-grid {
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr;
+    }
+
 }
