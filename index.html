@@ -6,11 +6,13 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <title>Jennifer Ruth Portfolio</title>
-        <link rel="stylesheet" href="css/style.css"> 
-             
+        <link rel="stylesheet" href="css/style.css">    
     </head> 
     <div class="container">
     <body>    
+        <div class="preloader">          
+            <img src="./images/birdie.png">
+        </div>
         <header>    
             <div class="headerBox">
                 <a href="#About">About</a>
@@ -25,7 +27,7 @@
             <h2>Hi! I'm Jennifer a UX UI Designer</h2>   
             <section class="heroImg"> 
                 <img id="hero" src="./images/heroImg.jpg" alt="Photo of Jennifer Ruth">
-                <button class="SendEmail">Connect with Me</button>
+                <button class="emailReplyButton" onclick="sendEmail(message)"><a href="mailto:jenniferruthdesign@gmail.com">Connect</a></button>
                 <div class="birdie1"><img id="birdieBounce" src="./images/birdie.png" alt="birdie"></div>
             </section>
         </div>
@@ -119,10 +121,9 @@
                     <h8>Hi I'm Jennifer! I'm a UX UI Designer in San Antonio, Texas</h8>
                     <p>I am a UX/UI Designer who is curious by nature.  I care about details, questioning, learning and growing in all aspects of my life. My years in management have equipped me with strong communication, and problem-solving skills. I believe in collaboration, knowing we bring out the best in each other when we are open.</p>
                     <p>When I am not designing I am outside in my large vegetable gardens, making pickles and jam from my homegrown produce, in the garage tinkering on my 1957 Studebaker farm truck, or hiking with my dog Murphy.</p>
-                    <p>Skills: Product Design, User Experience, Design Interaction, Design Mobile Design, Web Design, User Research Usability, Testing Personas, Scenarios Prototyping, HTML, CSS, & Javascript.</p>
-                    <p>Tools: Miro, Figma, Adobe XD, InVision, Trello, Google, Visual Studio Code, & GitHub.</p>
-                </div>
-                
+                    <p>Skills:</p><p> Product Design, User Experience, Design Interaction, Design Mobile Design, Web Design, User Research Usability, Testing Personas, Scenarios Prototyping, HTML & CSS.</p>
+                    <p>Tools:</p><p> Miro, Figma, Adobe XD, InVision, Trello, Google, Visual Studio Code, & GitHub.</p>
+                </div> 
             </section>
         </div>
         <div class="footerBox">
@@ -132,12 +133,14 @@
                      <a href="#Process">Process</a>
                     <a href="#Work">Work</a>
                 </div>
-                <h3>Let's Connect!</h3>
-                <button class="SendEmail">Connect with Me</button>
+                <h3>I'd love to hear about your next project!</h3>
+                <button class="emailReplyButton2" onclick="sendEmail(message)"><a href="mailto:jenniferruthdesign@gmail.com">Connect</a></button>
                 <div class="birdie2"><img id="birdieBounce2" src="./images/birdie.png" alt="birdie"></div>
             </footer>
         </div>
     </body>
 </div>
-<link rel="stylesheet" href="./js/index.js"> 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="js/template.js"></script>
+<script src="js/index.js"></script> 
 </html>
