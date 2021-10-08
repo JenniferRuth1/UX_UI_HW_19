@@ -137,17 +137,14 @@ button:hover {
     z-index: 2;
 }
 #heartBounce {
-    animation: heartBounce .9s infinite;
+    animation: heartBounce 2s ease-in-out infinite alternate;
 }
 @keyframes heartBounce {
-    from {
-      margin-top: 0px;
+    0% {
+        transform: scale(1.0);
     }
-    50% {
-      margin-top: 7px;
-    }
-    to {
-      margin-top: 0px;
+    100% {
+        transform: scale(1.2);
     }
 }
 
